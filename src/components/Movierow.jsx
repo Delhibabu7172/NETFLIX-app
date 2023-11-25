@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState, useRef } from 'react';
 import Movieitem from './Movieitem';
 import { FaAngleRight, FaAngleLeft } from 'react-icons/fa6';
+import { Profile } from '../pages';
 
 const Movierow = ({ title, url }) => {
   const [moviedata, setMovieData] = useState([]);
@@ -40,7 +41,7 @@ const Movierow = ({ title, url }) => {
         />
         <div ref={sliderRef} className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'>
           {moviedata.map(({ backdrop_path, title, id, poster_path }) => (
-            <Movieitem image={backdrop_path} title={title} key={id} altimg={poster_path} />
+             <Movieitem image={backdrop_path} title={title} key={id} altimg={poster_path} />
           ))}
         </div>
         <FaAngleRight
