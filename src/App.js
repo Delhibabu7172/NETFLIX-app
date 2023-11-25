@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import { Home, Login, Profile, Signup } from './pages'
 import Navbar from './components/Navbar'
 import ProtectedRoute from "./components/ProtectedRoute";
-import introvideo from "./assets/introvideo.mp4";
 
 function App() {
   return (
