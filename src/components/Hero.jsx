@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import database, { createimage } from "../MovieSerives"
+import database, { createimage } from "../Services/MovieSerives"
 
 const Hero = () => { 
 
@@ -14,7 +14,7 @@ useEffect(()=>{
   }
   apidata()
 },[])
-console.log(movie);
+// console.log(movie);
 
 let {backdrop_path,title,overview,release_date}=movie
 

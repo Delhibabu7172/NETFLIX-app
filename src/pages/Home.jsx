@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero'
 import Movierow from '../components/Movierow'
-import database from '../MovieSerives'
+import database from '../Services/MovieSerives'
 
 const Home = () => {
   return (
