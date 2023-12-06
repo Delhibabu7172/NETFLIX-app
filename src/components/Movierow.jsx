@@ -36,6 +36,7 @@ const Movierow = ({ title, url }) => {
 
       <div className='relative flex items-center group'>
         <FaAngleLeft
+        size={23}
           onClick={() => slide(-500)}
           className='bg-white rounded-full absolute left-2 opacity-80 text-gray-700 z-10 hidden group-hover:block cursor-pointer'
         />
@@ -45,6 +46,7 @@ const Movierow = ({ title, url }) => {
           ))}
         </div>
         <FaAngleRight
+        size={23}
           onClick={() => slide(500)}
           className='bg-white rounded-full absolute right-2 opacity-80 text-gray-700 z-10 hidden group-hover:block cursor-pointer'
         />
